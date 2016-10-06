@@ -19,7 +19,7 @@ history of changes that other people made.
 Trying python
 -------------
 
-Cool you have your project folder, it already has .gitignore and some other git related stuff in it.
+Cool you have your project folder, it already has ".gitignore" and some other git related stuff in it.
 
 Open a command line window; in windows you can do that via `shift + right click -> Open command window here`.
 
@@ -49,8 +49,8 @@ Git interuption
 ---------------
 
 You've done some changes, so it's about time you "Commit". But first check out what those changes are,
-you'll see a lot of garbage in there relating the env folder like 6000 new files. You don't want to
-save those because they're completely specified by requirements.txt so open up .gitignore and add
+you'll see a lot of garbage in there relating the "env" folder like 6000 new files. You don't want to
+save those because they're completely specified by "requirements.txt" so open up ".gitignore" and add
 the line `env/` somewhere. This tells git (and GitHub) to ignore the folder. You can now write a
 description of what you did and commit to master (I'll tell you who's your master once you get the
 hang of committing).
@@ -60,7 +60,7 @@ Trying IPython
 
 Finally the cool part. Run on the command line `ipython notebook`. This will start a little server
 that keeps running in the command line (you won't need it anymore) and opens up a webpage you can
-create notebooks in. These are saved locally, you'll probably see the requirements.txt file there too.
+create notebooks in. These are saved locally, you'll probably see the "requirements.txt" file there too.
 
 Create a pythhon 3 notebook and write some code :D
 
@@ -76,3 +76,10 @@ Here's some code for a simple plot to get you started:
     x = np.linspace(0, np.pi*2, 101) # create 101 points from 0 to 2pi
     y = np.sin(x) # apply the function sin to each of those points
     plt.plot(x, y) # plot y against x using matplotlib
+
+
+Requirements thing
+------------------
+
+When you want to tell other people to run your scripts you can tell them, install python then run
+`pip install -r requirements.txt` and everything you're using will be installed for them as well.
