@@ -16,6 +16,9 @@ but more importantly it gives you a sense of history of your project. This means
 point and undo changes there (really helpful when you just noticed things are messed up). Or see the 
 history of changes that other people made.
 
+Trying python
+-------------
+
 Cool you have your project folder, it already has .gitignore and some other git related stuff in it.
 
 Open a command line window; in windows you can do that via `shift + right click -> Open command window here`.
@@ -23,6 +26,9 @@ Open a command line window; in windows you can do that via `shift + right click 
 In the command window you can type `python` to open up ... python. Try it out. In general to close things
 from the command line you do `ctrl + c`. Sometimes (cough ipython) intercepts these, but you can tell it
 "I'm done typing" via `ctrl + d`.
+
+More setup
+----------
 
 Exit python. Alongside it you install `pip` which is a nice program that manages python packages for you.
 Try running this command `pip install virtualenv ipython pandas numpy matplotlib`. I'll explain what got
@@ -39,12 +45,18 @@ Now that it's activated, reinstall the things in this isolated environment by ru
 `pip install ipython pandas numpy matplotlib`. For the sharing with other people run this command
 `pip freeze > requirements.txt`; this creates a file that lists exactly what you have installed.
 
+Git interuption
+---------------
+
 You've done some changes, so it's about time you "Commit". But first check out what those changes are,
 you'll see a lot of garbage in there relating the env folder like 6000 new files. You don't want to
 save those because they're completely specified by requirements.txt so open up .gitignore and add
 the line `env/` somewhere. This tells git (and GitHub) to ignore the folder. You can now write a
 description of what you did and commit to master (I'll tell you who's your master once you get the
 hang of committing).
+
+Trying IPython
+--------------
 
 Finally the cool part. Run on the command line `ipython notebook`. This will start a little server
 that keeps running in the command line (you won't need it anymore) and opens up a webpage you can
